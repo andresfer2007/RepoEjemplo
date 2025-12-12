@@ -10,7 +10,7 @@ public class EstadNotas1 {
         do{
             System.out.print("¿Cuantos estudiantes desea ingresar?");
             n= sc.nextShort();
-        }while(n<=0));
+        }while(n<=0);
         
         notas= new float[n];
         promedio=0;
@@ -32,6 +32,7 @@ public class EstadNotas1 {
         System.out.println("Promedio"+promedio);
         System.out.println("Estudiantes por encima de la media:"+contArriba);
         System.out.println("Estudiantes por debajo de la media:"+contAbajo);
+        System.out.printf("Estudiantes por debajo de la media: %d\n", contAbajo);
         
     }
     
