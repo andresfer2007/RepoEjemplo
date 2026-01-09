@@ -4,7 +4,7 @@ public class ListaFactorial1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         short n,c,par;
-        int fac;
+        long fac;
         
         do{
             System.out.print("Ingrese la cantidad de numeros factoriales que desea:");
@@ -19,7 +19,7 @@ public class ListaFactorial1 {
         while (c < n) {
             fac = CalFactorial(par);
             if (c == n - 1) {
-                System.out.print(fac);
+                System.out.println(fac);
             } else {
                 System.out.print(fac + ", ");
             }
@@ -29,7 +29,7 @@ public class ListaFactorial1 {
       
         
     }
-    public static int CalFactorial(short num){
+    public static long CalFactorial(short num){
         int fac;
         fac=1;
         for(short i=1;i<=num;i++){
